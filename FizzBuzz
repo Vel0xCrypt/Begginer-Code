@@ -1,0 +1,11 @@
+#Code to the childrens game FizzBuzz.
+
+for num in range(1, 101):
+  if num % 3 == 0 and num % 5 == 0:  #Makes multiples of 3 and 5 or 15 print FizzBuzz
+    print('FizzBuzz')
+  elif num % 3 == 0:  #Makes multiples of 3 print Fizz
+    print('Fizz')
+  elif num % 5 == 0:  #Make multiples of 5 print Buzz
+    print('Buzz')
+  else:               #Prints the res of the numbers between 1-100
+    print(num)  
