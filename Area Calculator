@@ -1,0 +1,36 @@
+# Code to create and area calculator of a variety of shapes. 
+
+#Square	area=side2
+#Rectangle	area=length∗width
+#Triangle	area=(height∗base)/2
+#Circle	area=π∗radius2
+
+import math
+
+print("========================\n" + "   Area Calculator 📐\n" + "========================")  #Used to make header
+
+print('Please choose using the corresponding number:\n' + '1) Triangle\n' + '2) Rectangle\n' + '3) Square\n' + '4) Circle\n' + '5) Quit')
+shape = int(input('Please enter a number: '))
+
+if shape == 1: 
+    height = float(input('Please enter the height: '))
+    base = float(input('Please enter the base: '))
+    area = (height * base) / 2       #Area of Triangle
+    print(area)
+elif shape == 2:
+    width = float(input('Please enter the width: '))
+    length = float(input('Please enter the length: '))
+    area = length * width            #Area of Rectangle
+    print(area)
+elif shape == 3:
+    side = float(input('Please enter the #'))
+    area = side ** 2                 #Area of Square
+    print(area)
+elif shape == 4:
+    radius = float(input('Please enter the radius: '))
+    area = math.pi * (radius ** 2)   #Area of Circle
+    print(area)
+elif shape == 5:
+    quit
+else:
+    print('Wrong input please try again.')
