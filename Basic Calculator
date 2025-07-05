@@ -1,0 +1,17 @@
+# Basic calculator plan on adding more as I learn. 
+
+def add(a, b):
+  sum = a + b
+  print(sum)
+def subtract(a, b):
+  difference = a - b
+  print(difference)
+def multiply(a, b):
+  product = a * b
+  print(product)
+def divide(a, b):
+  quotent = a / b
+  print(quotent)
+def exp(a, b):
+  exponent = a ** b
+  print(exponent)
